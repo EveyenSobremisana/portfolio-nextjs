@@ -21,7 +21,7 @@ const Header = ({ dark }) => {
         <div className="wrapper">
           <div className="topbar_inner">
             <Link href="/">E.S</Link>
-            <div className="menu">
+            {/* <div className="menu">
               <div className="list">
                 <ul className="anchor_nav" id="anchor_nav">
                   <li>
@@ -32,18 +32,6 @@ const Header = ({ dark }) => {
                   </li>
                   <li>
                     <a href="#skills">Skills</a>
-                  </li>
-                  <li>
-                    <a href="#timeline">Timeline</a>
-                  </li>
-                  <li>
-                    <a href="#price">Price</a>
-                  </li>
-                  <li>
-                    <a href="#news">News</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -58,11 +46,11 @@ const Header = ({ dark }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="portfolio_mobile_menu">
+      {/* <div className="portfolio_mobile_menu">
         <div className="mobile_menu_inner">
           <div className="mobile_in">
             <Link href="/">E.S</Link>
@@ -93,22 +81,10 @@ const Header = ({ dark }) => {
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              <li>
-                <a href="#timeline">Timeline</a>
-              </li>
-              <li>
-                <a href="#price">Price</a>
-              </li>
-              <li>
-                <a href="#news">News</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { HomeModal } from "./ContentModal";
+import Link from "next/link";
+import Lottie from "react-lottie-player";
+import lottieJson from "../../public/lottie/technology.json";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -23,81 +26,24 @@ const Home = () => {
             <div className="left">
               <span className="name">Eveyen Sobremisana</span>
               <h3 className="job">Front End Developer</h3>
-              <div className="services">
-                <ul>
-                  <li>
-                    <a
-                      href="#"
-                      onClick={() =>
-                        onOpenModal(
-                          "/img/service/1.jpg",
-                          "Creative Designer based in Japan"
-                        )
-                      }
-                    >
-                      <img className="image" src="/img/service/1.jpg" alt="" />
-                      <span>Web Development</span>
-                      <img
-                        className="svg"
-                        src="/img/svg/right-arrow.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      onClick={() =>
-                        onOpenModal("/img/service/2.jpg", "Digital Marketing")
-                      }
-                    >
-                      <img className="image" src="/img/service/2.jpg" alt="" />
-                      <span>Digital Marketing</span>
-                      <img
-                        className="svg"
-                        src="/img/svg/right-arrow.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      onClick={() =>
-                        onOpenModal("/img/service/1.jpg", "Graphic Design")
-                      }
-                    >
-                      <img className="image" src="/img/service/3.jpg" alt="" />
-                      <span>Graphic Design</span>
-                      <img
-                        className="svg"
-                        src="/img/svg/right-arrow.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
               <div className="short_info">
                 <ul>
                   <li>
                     <div className="list_inner">
-                      <h3>10+</h3>
-                      <span>
-                        Years of
-                        <br />
-                        Experience
-                      </span>
+                      <Link href="https://github.com/EveyenSobremisana">
+                        <a className="logo" target="_blank">
+                          <img src="/img/logo/github.png" alt="" />
+                        </a>
+                      </Link>
                     </div>
                   </li>
                   <li>
                     <div className="list_inner">
-                      <h3>3K+</h3>
-                      <span>
-                        Happy
-                        <br />
-                        Customers
-                      </span>
+                      <Link href="https://www.linkedin.com/in/eveyen-sobremisana/">
+                        <a className="logo" target="_blank">
+                          <img src="/img/logo/linkedin.png" alt="" />
+                        </a>
+                      </Link>
                     </div>
                   </li>
                 </ul>
@@ -105,19 +51,14 @@ const Home = () => {
             </div>
             <div className="right">
               <div className="image">
-                <img src="/img/thumbs/3-4.jpg" alt="" />
-                <div
-                  className="main"
-                  style={{ backgroundImage: "url(img/hero/1.jpg)" }}
-                ></div>
-                <div className="shape"></div>
+                <Lottie loop animationData={lottieJson} play />
               </div>
             </div>
-            <div className="down anchor">
+            {/* <div className="down anchor">
               <a href="#portfolio">
                 <img className="svg" src="/img/svg/down-arrow.svg" alt="" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

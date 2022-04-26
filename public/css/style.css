@@ -487,7 +487,7 @@ body.opened .portfolio_topbar {
   min-height: 100vh;
   float: left;
   clear: both;
-  background-color: var(--cream);
+  background-color: #fff;
 }
 .portfolio_hero .container {
   min-height: 100%;
@@ -520,7 +520,6 @@ body.opened .portfolio_hero .content .left {
 }
 .portfolio_hero .name {
   display: inline-block;
-  margin-bottom: 16px;
   color: var(--darkBrown);
   font-family: var(--font);
   font-weight: 500;
@@ -530,7 +529,6 @@ body.opened .portfolio_hero .content .left {
   font-weight: 800;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 25px;
 }
 .portfolio_hero .services {
   width: 100%;
@@ -745,6 +743,12 @@ body.opened .portfolio_hero .content .left {
   display: flex;
   align-items: center;
 }
+.portfolio_hero .short_info ul li .logo {
+  width: 25px;
+}
+.portfolio_hero .short_info ul li a:hover {
+  text-decoration: underline;
+}
 .portfolio_hero .short_info ul li h3 {
   font-size: 45px;
   font-weight: 600;
@@ -761,7 +765,6 @@ body.opened .portfolio_hero .content .left {
 .portfolio_hero .content .right {
   width: 50%;
   text-align: right;
-  padding-left: 200px;
   position: relative;
   opacity: 0;
   visibility: hidden;
@@ -784,7 +787,6 @@ body.opened .portfolio_hero .content .right {
 .portfolio_hero .content .right .image img {
   min-width: 100%;
   position: relative;
-  opacity: 0;
 }
 .portfolio_hero .content .right .image .main {
   position: absolute;
@@ -1819,7 +1821,7 @@ body.opened .portfolio_hero .down {
   width: 6px;
   height: 6px;
   z-index: 100;
-  background-color: var(--darkBrown);
+  background-color: var(--brown);
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -1830,7 +1832,7 @@ body.opened .portfolio_hero .down {
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: var(--darkBrown);
+  background-color: var(--darkGreen);
   opacity: 0.3;
 }
 .cursor-outer {
@@ -1838,7 +1840,7 @@ body.opened .portfolio_hero .down {
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid var(--darkBrown);
+  border: 2px solid var(--darkGreen);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 100;
